@@ -1,11 +1,18 @@
 .map-container {
   position: relative;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
 .map {
-  width: 100%;
   display: block;
+  /* width: 100%; */
+  /* height: auto; */
+  width: 1800px; /* for full screen view */
+  height: 1800px; /* for full screen view */
+  user-select: none;
+  pointer-events: none;
 }
 
 .marker-container {

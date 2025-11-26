@@ -6,7 +6,7 @@ interface Props {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const PrimaryButton: React.FC<Props> = ({ title, onClick }) => {
+const PrimaryButton: React.FC<Props> = React.memo(({ title, onClick }) => {
   return (
     <>
       <button className='button' onClick={onClick}>
@@ -14,6 +14,6 @@ const PrimaryButton: React.FC<Props> = ({ title, onClick }) => {
       </button>
     </>
   );
-};
+});
 
 export default PrimaryButton;
