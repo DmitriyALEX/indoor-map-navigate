@@ -71,7 +71,7 @@ const Map = () => {
           <div className='popup'>
             <div className='close-container'>
               <button className='close-btn' onClick={() => setIsOpenPopup(false)}>
-                <img src='/public/close-icon.svg' className='close-icon' />
+                <img src='/close-icon.svg' className='close-icon' />
               </button>
             </div>
 
